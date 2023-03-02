@@ -2,4 +2,4 @@ num = int(input("enter num: "))
 if num%2==0:
     print( num, " is even number")
 else:
-    print(num, "id odd number")
+    print(num, "is odd number")
