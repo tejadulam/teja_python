@@ -1,0 +1,6 @@
+principle = int(input("enter p: "))
+rate = int(input("enter rate: "))
+time = int(input("enter time: "))
+n = int(input("enter n: "))
+ci = principle*(1+(rate/100))**(n*time)
+print(f"principle for {principle} ci is {ci}")
