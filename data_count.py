@@ -12,12 +12,22 @@ with open('data.csv', newline='\n') as csvfile:
         csv_data.append(x)
 print(csv_data)
 
-country = {}
+# country = {}
+# for x in csv_data:
+#     if country.get(x[5]):
+#         country[x[5]] += 1
+#     else:
+#         country[x[5]] = 1
+# print()
+# print(country)
+# print("Highest Population :",max(country,key=country.get))
+
+country_c = {}
 for x in csv_data:
-    if country.get(x[5]):
-        country[x[5]] += 1
+    if x[5] not in country_c:
+        country_c[x[5]] = 1
     else:
-        country[x[5]] = 1
-print()
-print(country)
-print("Highest Population :",max(country,key=country.get))
+        country_c[x[5]]+=1
+country = max(country_c,key=lambda x:country_c[x])
+print(country_c)
+print("Highest Population:",country,country_c[country])
