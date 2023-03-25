@@ -5,3 +5,9 @@
 l = ["a","b","c","d"]
 for x in l:
     print(x,end="")
+print()
+
+# another way
+l = ["a","b","c","d"]
+s = "".join(l)
+print(s)
