@@ -9,7 +9,7 @@ print()
 for x , y in table.items():
     print(x,y)
 
-
+#---- Indexing ----
 table = {
 'TXN1234': ['TXN1234', 'CUSTID123564', 23000, 'WITHDRAWAL', '12/08/2015:11:32:21'],
 'TXN1235': ('TXN1235', 'CUSTID123897', 34000, 'CASHDEPOSIT', '08/02/2016:14:51:02'),
