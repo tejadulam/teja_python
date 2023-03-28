@@ -12,3 +12,11 @@ l = []
 l.append(p1)
 l.append(p2)
 print(l)
+
+# -----dic user input---
+d = {}
+for x in range(3):
+    k = input("enter a word: ")
+    v = int(input("enter a value: "))
+    d[k] = v
+print(d)
